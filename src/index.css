@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.footer-links {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #868e96;
+  font-family: Inconsolata;
+  font-size: 18px;
+}
+
+.footer-link:hover{
+  color: #292b2c;
+}
