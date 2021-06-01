@@ -56,4 +56,20 @@ export default class BotPlayer {
     ) {
         const possibleMoves = this.possibleMoves(mainSuit, winningCard);
     }
+
+    strongestWinningMove() {
+
+    }
+
+    weakestWinningMove() {
+
+    }
+
+    weakestMove() {
+
+    }
+
+    // assume equal distribution until you know a player
+    // has run out of a card
+
 }
