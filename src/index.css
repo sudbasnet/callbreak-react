@@ -1,16 +1,59 @@
+@font-face {
+  font-family: munro;
+  src: url(./fonts/munro.ttf);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'munro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  height: 100vh;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.wrapper {
+  display: grid;
+  grid-template-rows: minmax(62px, 90px) minmax(560px, 610px) minmax(55px, 1fr);
+  grid-template-columns: 1fr minmax(335px, 450px) 1fr; 
+  grid-template-areas:
+  ". header ."
+  ". main ."
+  ". footer .";
+  height: 100%;
+}
+
+.header {
+grid-area: header;
+/* display: grid; */
+/* grid-template-columns: 1fr minmax(340px, 800px) 1fr; */
+/* grid-template-areas: ". nav ."; */
+}
+
+
+.main {
+grid-area: main;
+/* display: grid; */
+height: 100%;
+width: 100%;
+/* padding: 5px; */
+}
+
+.footer {
+height:100%;
+grid-area: footer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 
 .footer-links {
   list-style: none;
@@ -28,7 +71,6 @@ code {
 .footer-link {
   text-decoration: none;
   color: #868e96;
-  font-family: Inconsolata;
   font-size: 18px;
 }
 
