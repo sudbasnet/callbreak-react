@@ -4,7 +4,13 @@
 // not sure what that will be in the future
 
 const PlayerSelect: React.FC = () => {
-    return <div></div>
+    return <div>
+        Select your player <br />
+        <button>Up</button> <br />
+        <button>Left</button><button>Right</button> <br />
+        <button>Down</button> <br />
+        <button>Choose</button>
+    </div>
 }
 
 export default PlayerSelect;
